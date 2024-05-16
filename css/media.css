@@ -1,0 +1,175 @@
+
+
+/*small tablets*/
+@media (max-width: 1224px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr 1fr 25%;
+        grid-template-rows: auto 1fr 1fr 1fr auto auto auto auto;
+        grid-template-areas:
+            'grid3 grid3 grid3 grid3'
+            'grid1 grid1 grid2 grid2'
+            'grid4 grid4 grid8 grid8'
+            'grid5 grid5 grid6 grid6'
+            'grid10 grid10 grid7 grid7'
+            'grid9 grid9 grid7 grid7'
+            'grid11 grid11 grid11 grid11'
+            'grid12 grid12 grid12 grid12';
+    }
+
+    .caps {
+        font-size: 1rem;
+    }
+
+    .grey-text {
+        font-size: 1.3rem;
+    }
+
+    .grid3 {
+        padding-bottom: 15px;
+    }
+
+    a {
+        font-size: 1.3rem;
+    }
+
+    .grid1 > h3 {
+        font-size: 1.6rem;
+    }
+
+    .grid4 > a,
+    .arrow,
+    .grid6 > a {
+        font-size: 1.4rem;
+    }
+
+    .twitter-container {
+        margin-top: 45px;
+    }
+
+    .grid7 {
+        padding-bottom: 30px;
+    }
+
+    .grid11 > div {
+        margin-top: 50px;
+        margin-left: 330px;
+    }
+
+    .grid11 > h3 {
+        margin-top: 80px;
+    }
+
+}
+
+/*styles for mobile devices*/
+@media (max-width: 680px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'grid3'
+            'grid1'
+            'grid2'
+            'grid4'
+            'grid8'
+            'grid5'
+            'grid6'
+            'grid10'
+            'grid9'
+            'grid7'
+            'grid7'
+            'grid11'
+            'grid12';
+    }
+
+    a {
+        font-size: 1.4rem;
+    }
+
+    .caps {
+        font-size: 1.1rem;
+        line-height: 1.5;
+    }
+
+    .grid1 {
+        margin-left: 10px;
+    }
+
+    .grid1 > h3 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .grey-text {
+        font-size: 1.36rem;
+    }
+
+    .grid4 > h3,
+    .grid8 > h3 {
+        font-size: 1.8rem;
+    }
+
+    .grid4 > a {
+        font-size: 1.6rem;
+    }
+
+    .grid8 {
+        padding-bottom: 30px;
+    }
+
+    .grid5 > h3 {
+        font-size: 1.47rem;
+        line-height: 1.5;
+    }
+
+    .grid6 {
+        padding-bottom: 30px;
+    }
+
+    .grid6 > div,
+    .grid6 > a {
+        margin-left: 20px;
+    }
+
+    .grid6 > a {
+        font-size: 1.4rem;
+    }
+
+    .twitter-container {
+        margin-top: 10px;
+    }
+
+    .mini-caps {
+        font-size: 1rem;
+    }
+
+    .grid9 > h3 {
+        margin-top: 50px;
+        margin-left: 10px;
+    }
+
+    .grid7 {
+        padding-bottom: 50px;
+    }
+
+    .text-block {
+        font-size: 1.1rem;
+    }
+
+    .text-block2 {
+        font-size: 1.5rem;
+    }
+
+    .grid11 > div {
+        margin-left: 120px;
+    }
+
+    .grid12 > img {
+        width: 150px;
+    }
+
+    .grid12 > h3 {
+        font-size: 1.5rem;
+        line-height: 1.5;
+        margin-left: 35px;
+    }
+}

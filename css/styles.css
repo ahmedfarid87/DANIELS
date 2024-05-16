@@ -1,0 +1,543 @@
+/*&-- General--*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+:root {
+  --font-family: "Poppins";
+  --mainColor: RGB(52, 52, 52);
+  --transition-time: 0.4s;
+  --colorP: RGB(116, 129, 130);
+  --colorBtn: bg-black;
+  --bgColor: RGB(247, 247, 247);
+  --fontH: "Montserrat", sans-serif;
+}
+
+html{
+  scroll-padding-top: 50px;
+}
+
+p {
+  color: var(--colorP);
+}
+.text-mainColor {
+  color: RGB(116, 129, 130);
+}
+
+.iconses {
+  color: var(--colorBtn);
+}
+
+
+.inner i {
+    background-color: var(--bgColorcolorP);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    transition: var(--transition-time);
+  }
+  
+  .outer:hover i {
+    background-color: var(--mainColor);
+    color: white;
+  }
+
+/*^====> Navbar <====*/
+.navbar .navbar-nav li a {
+  color: white;
+  position: relative;
+}
+.navbar .navbar-nav li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+  transition: 0.5s all;
+}
+
+.navbar .navbar-nav li a:hover::after {
+  width: 100%;
+}
+
+#home::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+}
+
+/* &====> Header <==== */
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../imgs/imgs/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: var(--font-family);
+}
+
+.header-content h1 {
+  font-weight: 200;
+  font-size: 60px;
+}
+.header-content h5 {
+  font-size: 50px;
+  font-weight: 800;
+}
+
+header h1:after {
+  content: "|";
+  animation-name: typing;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  font-size: 60px;
+  font-weight: 400;
+}
+@keyframes typing {
+  0% {content: "|"; }
+  1% {content: "|";}
+  2% {content: "|";}
+  3% {content: "|";}
+  4% {content: "|";}
+  5% {content: "L|";}
+  6% {content: "La|";}
+  7% {content: "Lar|";}
+  8% {content: "Larr|";}
+  9% {content: "Larry |";}
+  10% {content: "Larry |";}
+  11% {content: "Larry D|";}
+  12% {content: "Larry Da|";}
+  13% {content: "Larry Dan|";}
+  14% {content: "Larry Dani|";}
+  15% {content: "Larry Danie|";}
+  16% {content: "Larry Daniel|";}
+  17% {content: "Larry Daniels|";}
+  18% {content: "Larry Daniels|";}
+  19% {content: "Larry Daniels|";}
+  20% {content: "Larry Daniels|";}
+  21% {content: "Larry Daniels|";}
+  22% {content: "Larry Daniel|";}
+  23% {content: "Larry Danie|";}
+  24% {content: "Larry Dani|";}
+  25% {content: "Larry Dan|";}
+  26% {content: "Larry Da|";}
+  27% {content: "Larry D|";}
+  28% {content: "Larry |";}
+  29% {content: "Larry |";}
+  30% {content: "Larry|";}
+  31% {content: "Larr|";}
+  32% {content: "Lar|";}
+  33% {content: "La|";}
+  34% {content: "L|";}
+  35% {content: "|";}
+  36% {content: "|";}
+  37% {content: "|";}
+  38% {content: "|";}
+  39% {content: "|";}
+  40% {content: "|";}
+  41% {content: "|";}
+  42% {content: "D|";}
+  43% {content: "De|";}
+  44% {content: "Dev|";}
+  45% {content: "Deve|";}
+  46% {content: "Devel|";}
+  47% {content: "Develo|";}
+  48% {content: "Develop|";}
+  49% {content: "Develope|";}
+  50% {content: "Developer|";}
+  51% {content: "Developer|";}
+  52% {content: "Developer|";}
+  53% {content: "Developer|";}
+  54% {content: "Developer|";}
+  55% {content: "Developer|";}
+  56% {content: "Develope|";}
+  57% {content: "Develop|";}
+  58% {content: "Develo|";}
+  59% {content: "Devel|";}
+  60% { content: "Deve|";}
+  61% { content: "Dev|";}
+  62% {content: "De|";}
+  63% {content: "D|";}
+  64% {content: "|";}
+  65% {content: "|";}
+  66% {content: "|";}
+  67% {content: "|";}
+  68% {content: "|";}
+  69% {content: "|";}
+  70% {content: "|";}
+  71% {content: "D|";}
+  72% {content: "De|";}
+  73% {content: "Des|";}
+  74% {content: "Desi|";}
+  75% {content: "Desig |";}
+  76% {content: "Design|";}
+  77% {content: "Designe|";}
+  78% {content: "Designer|";}
+  79% {content: "Designer|";}
+  80% {content: "Designer|";}
+  81% {content: "Designer|";}
+  82% {content: "Designer|";}
+  83% {content: "Designe|";}
+  84% {content: "Design|";}
+  85% {content: "Desig |";}
+  86% {content: "Desi|";}
+  87% {content: "Des|";}
+  88% {content: "De|";}
+  89% {content: "D|";}
+  90% {content: "|";}
+  91% {content: "|";}
+  92% {content: "|";}
+  93% {content: "|";}
+  94% {content: "|";}
+  95% {content: "|";}
+}
+
+.header-icon .ico {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #0008;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-icon .ico a{
+  text-decoration: none;
+  color: white;
+}
+/* ^====> About <==== */
+
+.about h3 {
+  color: RGB(28, 28, 28);
+  font-size: 30px;
+}
+
+.about-img {
+  background-image: url(../imgs/imgs/dots.png);
+}
+
+.progress {
+  line-height: 20px;
+  margin-top: 25px;
+  height: 25px;
+}
+.progress-bar {
+  color: white;
+  font-family: var(--font-family);
+  text-align: left;
+  background-color: RGB(28, 28, 28);
+}
+
+.progress-bar span {
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+.btn {
+  color: white;
+  background-color: black;
+  font-family: var(--font-family);
+  transition: var(--transition-time);
+}
+
+.btn:hover {
+  border: 1px solid black;
+  color: black;
+}
+
+#btnss {
+  border: 1px solid black;
+  color: black;
+  font-family: var(--font-family);
+  background-color: white;
+  transition: var(--transition-time);
+}
+
+#btnss:hover {
+  color: white;
+  background-color: black;
+}
+
+/*!=====> Services <======== */
+
+.services {
+  background-color: var(--bgColor);
+}
+
+.section-header h2 {
+  width: fit-content;
+  height: 30px;
+  background-image: url(../imgs/imgs/dots.png);
+  background-repeat: repeat;
+  background-position: center;
+  font-size: 40px;
+  font-weight: 900;
+  z-index: -1;
+  margin: auto;
+}
+
+.section-header span {
+  font-weight: 900;
+}
+
+.top-card  i{
+  background-color: var(--bgColorcolorP);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  transition: var(--transition-time);
+}
+
+.service-inner:hover i{
+  background-color: var(--mainColor);
+  color: white;
+}
+
+.services .service-p {
+  max-width: 300px;
+  text-align: center;
+  margin: auto;
+}
+
+/* ? ====> Portfolio <==== */
+
+.nav .nav-link {
+  color: black;
+  border-radius: 16px;
+  font-weight: 700;
+  position: relative;
+  font-family: var(--font-family);
+}
+
+
+.nav .nav-link.active::after {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 2px;
+  left: 10px;
+  bottom: 0;
+  background-color: black;
+}
+
+.nav .nav-link::after{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 10px;
+  bottom: 0;
+  background-color: black;
+  transition: 0.5s all;
+}
+
+.nav .nav-link:hover::after{
+  width: 70%;
+}
+
+.layer {
+  top: 115%;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  opacity: 0;
+  background-color: rgba(255, 255, 255,.9);
+  transition: var(--transition-time) all;
+}
+
+.inner-layer {
+  transform: translateY(200px);
+  transition: var(--transition-time) all;
+}
+
+.col-inner img {
+  transition: var(--transition-time) all;
+}
+
+.col-inner:hover .layer {
+  opacity: 1;
+  top: 5px;
+}
+
+.col-inner:hover .inner-layer {
+  transform: translate(2);
+}
+
+.inner-layer h5{
+  color: black;
+}
+
+.layer .iconss{
+  font-size: 16px;
+}
+
+.layer h6{
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: var(--fontH);
+}
+
+.layer .iconss i{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.layer .iconss a{
+  text-decoration: none;
+  color: white;
+}
+
+.layer .iconss i:hover {
+  background-color: white;
+  border: 1px solid #000;
+  color: #000;
+}
+
+
+/* ~===================>Numbers<==============  */
+
+
+/*~ ================> Team <================= */
+.layers {
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 95px;
+  opacity: 0;
+  background-color: rgba(255, 255, 255,.9);
+  transition: var(--transition-time) all;
+}
+
+.card .layers {
+  transition: var(--transition-time) all;
+}
+
+.card:hover .layers {
+  opacity: 1;
+  cursor: pointer;
+  transform: rotateY(360deg);
+}
+
+.card  .card-img{
+  transition: var(--transition-time) all ;
+  width: 100%;
+  overflow: hidden;
+  display: block;
+  object-fit: cover;
+  max-height:fit-content 100%;
+}
+
+.card:hover .card-img{
+  transform: scale(1.1);
+}
+
+.card-body{
+  z-index: 999;
+  overflow: hidden;
+  background-color: var(--mainColor);
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+  font-family: var(--fontH);
+}
+
+
+.card .card-body:hover h5{
+  opacity: 1;
+  cursor: pointer;
+  transform: rotateY(360deg);
+}
+
+.card .card-body:hover h5{
+  transform: scale(1);
+}
+.card-body h6{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.iconss{
+font-size: 20px;
+}
+
+
+.card .iconss i{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card .iconss a{
+  text-decoration: none;
+  color: white;
+}
+
+.card .iconss i:hover {
+  background-color: white;
+  border: 1px solid #000;
+  color: #000;
+}
+/* & ==============>Testimonial<================= */
+#carouselExampleCaptions .carousel-indicators button {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+.carousel-inner .carousel-item img {
+  width: 8rem;
+  margin-bottom: 12rem;
+}
+
+/*! ==============>Contact us<================= */
+
+.butn {
+    color: white;
+    background-color: black;
+    font-family: var(--font-family);
+    transition: var(--transition-time);
+  }
+  
+  .butn:hover {
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+  }
+
+/* *==============>Footer<================= */
+.rights p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
